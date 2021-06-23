@@ -1,0 +1,18 @@
+# Builds
+build
+
+
+# Optional npm cache directory
+.npm
+
+# dependencies
+/node_modules
+
+# editor
+.vscode/*
+!.vscode/launch.json
+\.idea/
+
+
+# contracts 
+/client/src/contracts/
