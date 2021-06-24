@@ -29,38 +29,40 @@ requirements are:
 git clone git@github.com:hanzel98/rock-paper-scissors.git
 ```
 
-2 - Go to the cloned repository in the local machine, and inside the /client folder run `npm install`
+2 - Go to the cloned repository in the local machine and inside the /client folder run `npm install`
 
 3 - Make sure to have truffle installed.
 
-4 - Download and install Ganache, and configure a new workspace with this values:
+4 - Download and install Ganache. Configure a new workspace with this values:
 
 - Host: 127.0.0.1
 - Port: 7545
 - Network id: 5777
 - Create at least 3 different unlockced accounts with funds
 
-5 - Open a terminal inside the root of the project /rock-paper-scissors and run `truffle test` , after that the tests should start running. If all them passed the application is working properly.
+5 - Open a terminal inside the root of the project /rock-paper-scissors and run `truffle test`. After that the tests should start running. If all tests were marked as correct then the application is working as it should
 
 ## Intructions to play
 
-1 - It is necessary to follow the previous instructions for tests before beginning these instructions.
+1 - The above instructions for testing must be followed before beginning these instructions.
 
 2 - Download Firefox and Google Chrome. (Two browsers are needed)
 
 3 - Install the Metamask extension in each browser and follow the next steps to configure it:
 
-- Open and create you metamask wallet, once you are inside create a new network in the option Networks/Custom RPC and insert these values `New RPC URL: 127.0.0.1 Chain Id: 1337` then change to this network.
+- Open and create you metamask wallet, once you are inside create a new network in the option Networks/Custom RPC and insert these values New RPC URL: `HTTP://127.0.0.1:7545` Chain Id: `1337` then change to this network.
 - Open the gananche instance that is running and copy the private key of the first account.
-- Go to one of the metamask extensions in one of the browsers and inside Accounts/Import Account paste the first private key.
-- Repeat the process to configure the second account, but this time with a differen private key and a different browser.
+- Go to one of the metamask extensions in one of the browsers and inside My Accounts/Import Account paste the first private key.
+- Repeat the process to configure the second account, but this time with a different private key and a different browser.
 - If everything went well in these steps you will have two browsers connected to the local ganache, and you will be using two different accounts that will have ethers.
 
-4 - Open a terminal and go to the project root folder then run `truffle console`, after that type `migrate`, this will compile and migrate the smart contracts.
+4 - Open a terminal and go to the project root folder then run `truffle console`, after that type `migrate` and hit enter, this will compile and migrate the smart contracts.
 
-5 - Open a terminal and move to the /rock-paper-scissors/client folder then run npm run start, this will start the server that will open run the UI here <http://localhost:3000>
+5 - Open a terminal and move to the /rock-paper-scissors/client folder then run `npm run start`, this will start the server that will open the UI here <http://localhost:3000>
 
 ## Demo in video
+
+Check out these demo videos to get more familiar with the user interface:
 
 Application: <https://youtu.be/TQrwd7zdorU>
 
